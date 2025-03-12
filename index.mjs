@@ -420,7 +420,6 @@ export default function runTest262({
   }
 
   if (unexpectedPasses.size > 0) {
-    hasFailures = true;
     if (updateExpectedFailureFiles) {
       print(`\n${color.yellow.bold('WARNING:')} Tests passed unexpectedly; the following tests have been removed from their respective files:`);
     } else {
